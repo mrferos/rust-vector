@@ -1,0 +1,22 @@
+[package]
+name = "veneur"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "veneur"
+path = "src/bin/veneur.rs"
+
+[[bin]]
+name = "veneur-proxy"
+path = "src/bin/veneur-proxy.rs"
+
+[lib]
+name = "ingest"
+path = "src/ingest/lib.rs"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+config = "0.13.3"
+serde = "1.0.188"
